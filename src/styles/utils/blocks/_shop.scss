@@ -1,0 +1,58 @@
+.shop {
+  padding: 120px 0;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__tabs {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__tab {
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color $transition-fast;
+
+    &--active {
+      background-color: $color-accent;
+      color: white;
+    }
+
+    &:hover {
+      background-color: color.adjust($color-accent, $lightness: 10%);
+    }
+  }
+
+  &__slider {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__track {
+    display: flex;
+    gap: 24px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+
+  &__item {
+    width: 280px;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+    transition:
+      transform $transition-fast,
+      box-shadow $transition-fast;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    }
+  }
+}

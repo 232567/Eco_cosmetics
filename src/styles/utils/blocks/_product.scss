@@ -1,0 +1,44 @@
+.product {
+  padding: 120px 0;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+
+  &__image-wrapper {
+    flex: 1;
+  }
+
+  &__image {
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  &__content {
+    flex: 1;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-size: 36px;
+  }
+
+  &__description {
+    margin-bottom: 32px;
+    font-size: 18px;
+  }
+
+  &__btn {
+    padding: 14px 32px;
+    background-color: $color-accent;
+    color: white;
+    border-radius: 6px;
+    transition: background-color $transition-fast;
+
+    &:hover {
+      background-color: color.adjust($color-accent, $lightness: -10%);
+    }
+  }
+}

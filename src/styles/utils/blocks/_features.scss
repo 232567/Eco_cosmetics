@@ -1,0 +1,33 @@
+.features {
+  padding: 120px 0;
+  background-color: #f7f7f7;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  &__item {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+  }
+
+  &__icon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  &__text {
+    font-size: 16px;
+    color: #555;
+  }
+}

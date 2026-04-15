@@ -1,0 +1,11 @@
+.button {
+  transition:
+    background-color $transition-fast,
+    transform $transition-fast;
+
+  &:hover,
+  &:focus-visible {
+    transform: translateY(-2px);
+    background-color: $color-accent;
+  }
+}

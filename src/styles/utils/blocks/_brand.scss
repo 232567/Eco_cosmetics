@@ -1,0 +1,45 @@
+.brand {
+  padding: 120px 0;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__content {
+    max-width: 520px;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    font-size: 48px;
+    font-weight: 600;
+  }
+
+  &__text {
+    margin-bottom: 32px;
+    font-size: 18px;
+  }
+
+  &__btn {
+    padding: 14px 32px;
+    background-color: $color-accent;
+    color: white;
+    border-radius: 6px;
+    transition: background-color $transition-fast;
+
+    &:hover {
+      background-color: color.adjust($color-accent, $lightness: -10%);
+    }
+  }
+
+  &__image-wrapper {
+    max-width: 520px;
+  }
+
+  &__image {
+    width: 100%;
+    border-radius: 12px;
+  }
+}

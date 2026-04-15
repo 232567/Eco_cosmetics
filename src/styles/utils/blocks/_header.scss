@@ -1,0 +1,41 @@
+.header {
+  padding: 24px 0;
+  background-color: #fff;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: $color-dark;
+  }
+
+  &__cart-btn {
+    width: 32px;
+    height: 32px;
+    background-image: url('../images/cart.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.nav {
+  &__list {
+    display: flex;
+    gap: 32px;
+  }
+
+  &__link {
+    font-size: 16px;
+    color: $color-dark;
+    transition: color $transition-fast;
+
+    &:hover {
+      color: $color-accent;
+    }
+  }
+}
