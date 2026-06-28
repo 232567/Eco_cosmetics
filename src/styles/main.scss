@@ -1,6 +1,135 @@
-@import 'utils';
+@import 'utils/fonts';
+@import 'utils/utils';
 @import 'typography';
 
+@import 'utils/blocks/powder';
+@import 'utils/blocks/creators';
+@import 'utils/blocks/header';
+@import 'utils/blocks/hero';
+@import 'utils/blocks/intro';
+@import 'utils/blocks/about';
+@import 'utils/blocks/shop';
+@import 'utils/blocks/contact';
+@import 'utils/blocks/footer';
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  margin: 0;
   background: $c-gray;
+}
+
+.page {
+  font-family: Poppins, sans-serif;
+
+  &__body {
+    overflow-x: hidden;
+    min-width: 320px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .header__container,
+  .hero__container,
+  .intro__container,
+  .about__container,
+  .shop__container,
+  .creators__container,
+  .powder__container,
+  .powder__features,
+  .contact__container,
+  .footer__container {
+    padding: 0 20px;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .hero {
+    padding: 40px 0 80px;
+
+    &__container {
+      flex-direction: column-reverse;
+      gap: 40px;
+    }
+
+    &__content {
+      width: 100%;
+      text-align: center;
+    }
+
+    &__title {
+      font-size: 36px;
+    }
+
+    &__image {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .intro {
+    display: none;
+  }
+
+  .about,
+  .creators,
+  .powder,
+  .contact {
+    padding: 80px 0;
+  }
+
+  .about__container,
+  .creators__container,
+  .powder__container,
+  .contact__container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about__label,
+  .creators__side-label,
+  .powder__side-label,
+  .contact__side-label {
+    display: none;
+  }
+
+  .about__images {
+    display: none;
+  }
+
+  .shop {
+    padding: 80px 0;
+
+    &__content--active {
+      grid-template-columns: 1fr;
+    }
+
+    &__image {
+      height: 360px;
+    }
+  }
+
+  .powder__features {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .contact__image {
+    display: none;
+  }
+
+  .footer__container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer__contacts {
+    align-items: flex-start;
+  }
 }

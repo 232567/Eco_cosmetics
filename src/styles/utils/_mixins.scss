@@ -6,13 +6,13 @@
 
 @mixin respond($breakpoint) {
   @if $breakpoint == tablet {
-    @media (max-width: $bp-tablet) {
+    @media (max-width: 640px) {
       @content;
     }
   }
 
   @if $breakpoint == mobile {
-    @media (max-width: $bp-mobile) {
+    @media (max-width: 320px) {
       @content;
     }
   }
