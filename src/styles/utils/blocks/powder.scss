@@ -19,9 +19,21 @@
 
   &__link {
     border-bottom: 1px solid #344f10;
+
     color: #344f10;
     text-decoration: none;
     text-transform: uppercase;
+
+    transition:
+      border-color 0.3s,
+      color 0.3s,
+      transform 0.3s;
+
+    &:hover {
+      transform: translateX(6px);
+      border-color: #5b7d2a;
+      color: #5b7d2a;
+    }
   }
 
   &__image {

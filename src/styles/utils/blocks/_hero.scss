@@ -47,16 +47,16 @@
 
     background-color: #333;
 
-    transition: background-color 0.3s;
+    transition:
+      background-color 0.3s,
+      color 0.3s,
+      transform 0.3s,
+      box-shadow 0.3s;
 
     &:hover {
+      transform: translateY(-3px);
       background-color: #344f10;
+      box-shadow: 0 8px 20px rgba(52, 79, 16, 0.25);
     }
-  }
-
-  &__image {
-    width: 520px;
-    height: 430px;
-    object-fit: cover;
   }
 }

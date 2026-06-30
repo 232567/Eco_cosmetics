@@ -1,28 +1,44 @@
 .footer {
   padding: 60px 0;
-  background: rgba(52, 79, 16, 0.5);
+  background: #8c9772;
 
   &__container {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
 
-    max-width: 1280px;
+    max-width: 1180px;
     margin: 0 auto;
     padding: 0 50px;
   }
 
-  &__nav,
+  &__nav {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 70px;
+  }
+
   &__contacts {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 14px;
   }
 
-  &__link,
+  &__link {
+    color: #fff;
+    text-decoration: none;
+
+    transition: color 0.3s;
+
+    &:hover {
+      color: #344f10;
+    }
+  }
+
   &__text,
   &__copy {
-    color: white;
-    text-decoration: none;
+    margin: 0;
+    color: #fff;
   }
 
   &__social {
@@ -34,9 +50,5 @@
   &__social-icon {
     width: 22px;
     height: 22px;
-  }
-
-  &__copy {
-    margin-top: 40px;
   }
 }

@@ -51,6 +51,17 @@
     color: #344f10;
     text-decoration: none;
     text-transform: uppercase;
+
+    transition:
+      color 0.3s,
+      border-color 0.3s,
+      transform 0.3s;
+
+    &:hover {
+      transform: translateX(6px);
+      border-color: #5b7d2a;
+      color: #5b7d2a;
+    }
   }
 
   &__images {

@@ -1,308 +1,276 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="page">
   <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eco Cosmetics</title>
+    <link rel="icon" href="./src/images/recycle.png">
+  </head>
 
-    <link
-      rel="stylesheet"
-      href="./src/styles/main.scss"
-    />
-    <link
-      rel="icon" type="image/png"
-      href="favicon.png"
-    />
+  <body class="page__body">
+    <header class="header" id="home">
+      <div class="header__container">
+        <a href="#home" class="header__logo">
+          <img src="./src/images/logo.png" alt="Witch of Mountain Winds" class="header__logo-image">
+        </a>
 
-     </head>
+        <nav class="header__nav">
+          <a href="#shop" class="header__link">Shop</a>
+          <a href="#contact" class="header__link">Contact</a>
+          <a href="#about" class="header__link">About</a>
+        </nav>
 
-  <body class="page">
-  <header class="header" id="top">
-    <div class="header__inner container">
-      <a href="#top" class="header__logo">Eco Cosmetics</a>
-
-      <nav class="header__nav nav">
-        <ul class="nav__list">
-          <li class="nav__item"><a href="#brand" class="nav__link">Brand</a></li>
-          <li class="nav__item"><a href="#shop" class="nav__link">Shop</a></li>
-          <li class="nav__item"><a href="#creators" class="nav__link">Creators</a></li>
-          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-        </ul>
-      </nav>
-
-      <button class="header__cart-btn" type="button"></button>
-    </div>
-  </header>
-
-  <main class="main">
-
-    <!-- BRAND -->
-    <section class="brand" id="brand">
-      <div class="container brand__inner">
-
-        <div class="brand__content">
-          <h1 class="brand__title">Brand of eco cosmetics and magic candles</h1>
-
-          <p class="brand__text">
-            Biologists say that birds are indicators of the environmental situation, and over the past half century, the population of seabirds has declined by 70%. 
-            Birds die due to environmental problems and human intervention in the natural environment.
-          </p>
-
-          <a href="#shop" class="brand__btn">Shop now</a>
-        </div>
-
-        <div class="brand__image-wrapper">
-          <img src="./src/images/brand-hero.png" alt="Eco Cosmetics" class="brand__image" />
-        </div>
-
+        <a href="#shop" class="header__cart" aria-label="Shopping bag">
+          <img src="./src/images/cart-icon.png" alt="Shopping bag" class="header__cart-icon">
+        </a>
       </div>
-    </section>
+    </header>
 
-    <!-- SCROLL DOWN -->
-    <section class="scroll-down" id="scroll">
-      <div class="container scroll-down__inner">
-        <p class="scroll-down__text">
-         if you choose the gifts of nature and care about it’s - scroll down
-        </p>
+    <main>
+      <section class="hero">
+        <div class="hero__container">
+          <div class="hero__content">
+            <h1 class="hero__title">Brand of eco-cosmetics and magic candles</h1>
+            <p class="hero__text">20% of sales at a wild bird shelter</p>
+            <a href="#shop" class="hero__button">Shop</a>
+          </div>
 
-        <div class="scroll-down__icon"></div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section class="about" id="about">
-      <div class="container about__inner">
-
-        <div class="about__image-wrapper">
-          <img src="./src/images/about.png" alt="About Eco Cosmetics" class="about__image" />
+          <img src="./src/images/brand-hero.png" alt="Eco cosmetics" class="hero__image">
         </div>
+      </section>
 
-        <div class="about__content">
-          <h2 class="about__title">About our brand</h2>
-
-          <p class="about__text">
-            We create eco-friendly cosmetics and candles using only natural ingredients.
-            Our mission is to bring harmony and balance through nature.
+      <section class="intro">
+        <div class="intro__container">
+          <p class="intro__text">
+            Biologists say that birds are indicators of the environmental situation,
+            and over the past half century, the population of seabirds has declined
+            by 70%. Birds die due to environmental problems and human intervention
+            in the natural environment.
           </p>
 
-          <p class="about__text">
-            Our brand cosmetics are made from natural ingredients and we are promoting them to the masses.
-            Shampoo, hair conditioner, soap – in recycled paper.
-            Creams, oils, washing products in glass containers with recycled paper labels.
-            No synthetics and microplastics in cosmetics.
-            And the packaging from it can be returned for recycling or reused.
-          </p>
-
-          <a href="#creators" class="about__btn">Learn more</a>
+          <h2 class="intro__title">
+            If you choose the gifts of nature and care about it’s - scroll down
+          </h2>
         </div>
+      </section>
 
-      </div>
-    </section>
+      <section class="about" id="about">
+        <div class="about__container">
+          <div class="about__content">
+            <p class="about__label">Witch of Mountain Winds</p>
+            <h2 class="about__title">About our brand</h2>
 
-    <!-- FEATURES -->
-    <section class="features" id="features">
-      <div class="container features__inner">
+            <p class="about__text">
+              Our brand cosmetics are made from natural ingredients and we are promoting
+              them to the masses. Shampoo, hair conditioner, soap - in recycled paper.
+              Creams, oils, washing products in glass containers with recycled paper labels.
+              No synthetics and microplastics in cosmetics. And the packaging from it can 
+              be returned for recycling or reused.
+            </p>
 
-        <article class="features__item card">
-          <img src="./src/images/food.png" class="features__icon" />
-          <h3 class="features__title">Sustainable food production</h3>
-          <p class="features__text">
-            Eco-friendly agricultural practices that respect nature.
+            <p class="about__text">
+              We are all neighbors of one big House. And we must protect what we have.
+              Destroying everything around for the sake of consumerism and imaginary
+              convenience, we destroy what does not belong to us. Be aware of your choice!
           </p>
-        </article>
 
-        <article class="features__item">
-          <img src="./src/images/recycle.png"  class="features__icon" />
-          <h3 class="features__title">Recycling and waste management</h3>
-          <p class="features__text">
-            Reusing materials to reduce pollution and conserve resources.
-          </p>
-        </article>
+            <a href="#shop" class="about__link">Learn more</a>
+          </div>
 
-        <article class="features__item card">
-          <img src="./src/images/packaging.png"  class="features__icon" />
-          <h3 class="features__title">Eco-friendly packaging</h3>
-          <p class="features__text">
-            Biodegradable and recyclable packaging materials.
-          </p>
-        </article>
+          <div class="about__images">
+            <img src="./src/images/about.png" alt="About our brand" class="about__image">
+            <img src="./src/images/about-small.png" alt="Nature" class="about__image about__image--small">
+          </div>
+        </div>
+      </section>
 
-      </div>
-    </section>
-
-    <!-- SHOP -->
-    <section class="shop" id="shop">
-      <div class="container">
-
-        <div class="shop__header">
+      <section class="shop" id="shop">
+        <div class="shop__container">
           <h2 class="shop__title">Shop</h2>
 
           <div class="shop__tabs">
-            <button class="shop__tab shop__tab--active" data-tab="all">All products</button>
-            <button class="shop__tab" data-tab="candles">Candles</button>
-            <button class="shop__tab" data-tab="cosmetics">Cosmetics</button>
-          </div>
-        </div>
-
-        <div class="shop__grid">  
-
-         <article class="shop__item card" data-category="candles">
-            <img src="./src/images/product-1.png" class="shop__item-image" />
-            <h3 class="shop__item-title">Magic Candle</h3>
-            <p class="shop__item-price">€19.99</p>
-            <button class="shop__item-btn">Learn more</button>
-          </article>
-
-          <article class="shop__item card" data-category="cosmetics">
-            <img src="./src/images/product-2.png" class="shop__item-image" />
-            <h3 class="shop__item-title">Eco face Cream</h3>
-            <p class="shop__item-price">€24.99</p>
-            <button class="shop__item-btn">Learn more</button>
-          </article>
-
+            <button class="shop__tab shop__tab--active" type="button">Face</button>
+            <button class="shop__tab" type="button">Body</button>
+            <button class="shop__tab" type="button">Hair</button>
+            <button class="shop__tab" type="button">Candles</button>
           </div>
 
-      </div>
-    </section>
+          <div class="shop__content shop__content--active" id="face">
+            <article class="shop__card">
+              <img src="./src/images/product-1.png" alt="Hydrophilic oil" class="shop__image">
+              <h3 class="shop__product-name">Hydrophilic oil</h3>
+              <p class="shop__price">160 UAH</p>
+            </article>
 
-    <!-- ABOUT THE CREATORS -->
-<section class="about-creators" id="about-creators">
-  <div class="container about-creators__inner">
+            <article class="shop__card">
+              <img src="./src/images/product-2.png" alt="Ubtan" class="shop__image">
+              <h3 class="shop__product-name">Ubtan</h3>
+              <p class="shop__price">160 UAH</p>
+            </article>
+          </div>
 
-    <div class="about-creators__content">
-      <h2 class="about-creators__title">About the creators</h2>
+          <a href="#shop" class="shop__button">All products</a>
+        </div>
+      </section>
 
-      <p class="about-creators__text">
-        My name is Victoria, I’m a master at candle making and natural cosmetics.
-        In the past, a cynologist, was engaged in herbs, made layouts on the Tarot.
-      </p>
+      <section class="creators" id="creators">
+        <div class="creators__container">
+          <div class="creators__content">
+            <p class="creators__side-label">about the creators</p>
+            <h2 class="creators__title">About the creators</h2>
 
-      <p class="about-creators__text">
-        I am also a volunteer to save wild birds in distress, a consultant to the
-        Phoenix Wildlife Rehabilitation Center, a member of the Society for the
-        Conservation of Birds of Ukraine with the support of Birdlife International.
-      </p>
+            <p class="creators__text">
+              My name is Victoria, I’m a master at candle making and natural
+              cosmetics. In the past, a cynologist, was engaged in herbs, made
+              layouts on the Tarot.
+            </p>
 
-      <p class="about-creators__text">
-        My husband and I live in the Carpathian region in the city of Chernivtsi.
-        I dream of my center for the rehabilitation of wild birds, as it is very
-        difficult to rescue birds in a rented communal apartment.
-      </p>
+            <p class="creators__text">
+              I am also a volunteer to save wild birds in distress, a consultant to
+              the Phoenix Wildlife Rehabilitation Center, a member of the Society for
+              the Conservation of Birds of Ukraine with the support of Birdlife
+              International.
+            </p>
 
-      <div class="about-creators__buttons">
-        <a href="#creators" class="about-creators__btn">Learn more</a>
-        <a href="#contact" class="about-creators__btn about-creators__btn--outline">To contact us</a>
-      </div>
-    </div>
+            <p class="creators__text">
+              My husband and I live in the Carpathian region in the city of
+              Chernivtsi. I dream of my center for the rehabilitation of wild birds.
+            </p>
 
-    <div class="about-creators__image-wrapper">
-      <img src="./src/images/about-creators.png" alt="About the creators" class="about-creators__image" />
-    </div>
+            <a href="#about" class="creators__link">Learn more</a>
+            <a href="#contact" class="creators__button">To contact us</a>
+          </div>
 
-  </div>
-</section>
+          <img src="./src/images/creators.png" alt="Bird in hands" class="creators__image">
+        </div>
+      </section>
 
+      <section class="powder" id="powder">
+        <div class="powder__container">
+          <div class="powder__content">
+            <p class="powder__side-label">Ingredients</p>
+            <h2 class="powder__title">Ayurvedic Tooth Powder</h2>
+            <a href="#" class="powder__link">Learn more</a>
+          </div>
 
-    <!-- PRODUCT -->
-    <section class="product" id="tooth-powder">
-      <div class="container product__inner">
-
-        <div class="product__image-wrapper card">
-          <img src="./src/images/tooth-powder.png" alt="Ayurvedic Tooth Powder" class="product__image" />
+          <img
+            src="./src/images/tooth-powder.png"
+            alt="Ayurvedic Tooth Powder ingredients"
+            class="powder__image"
+          >
         </div>
 
-        <div class="product__content">
-          <h2 class="product__title">Ayurvedic Tooth Powder</h2>
-          <p class="product__description">
-            A natural herbal blend that strengthens gums, cleans teeth and freshens breath.
-          </p>
+        <div class="powder__features">
+          <article class="powder__feature">
+            <img src="./src/images/icon-no-synthetics.png" alt="No synthetics" class="powder__icon">
+            <p class="powder__feature-text">No synthetics and microplastics</p>
+          </article>
 
-          <button class="product__btn">Learn more</button>
+          <article class="powder__feature">
+            <img src="./src/images/icon-recycle.png" alt="Recycle" class="powder__icon">
+            <p class="powder__feature-text">Product packaging can be recycled or reused</p>
+          </article>
+
+          <article class="powder__feature">
+            <img src="./src/images/icon-natural.png" alt="Natural" class="powder__icon">
+            <p class="powder__feature-text">Only natural ingredients</p>
+          </article>
         </div>
+      </section>
 
-      </div>
-    </section>
+       <section class="contact" id="contact">
+        <div class="contact__container">
+          <div class="contact__content">
+            <p class="contact__side-label">help</p>
 
-   <!-- CONTACT -->
-<section class="contact" id="contact">
-  <div class="container contact__inner">
+            <h2 class="contact__title">Contact us</h2>
 
-    <div class="contact__content">
-      <h2 class="contact__title">Contact us</h2>
-      <p class="contact__subtitle">
-        We will help you choose a product that suits you and answer your other questions.
-      </p>
+            <p class="contact__text">
+              We will help you choose a product that suits you and answer your other questions
+            </p>
 
-      <form class="contact-form card" id="contact-form" novalidate>
+            <form class="contact__form">
+              <input class="contact__input" type="text" name="name" placeholder="Your Name" required>
+              <input class="contact__input" type="email" name="email" placeholder="E-Mail" required>
+              <input class="contact__input" type="tel" name="phone" placeholder="Phone Number" pattern="^\+?[0-9\s\-]{7,15}$" required>
+              <textarea class="contact__textarea" name="message" placeholder="Your Message" rows="3" required></textarea>
 
-        <div class="contact-form__fields">
-          <label class="contact-form__label" for="name">Your Name</label>
-          <input class="contact-form__input" type="text" id="name" name="name" placeholder="Enter your name" required />
+              <button class="contact__button" type="submit">
+                Send a message
+              </button>
+            </form>
+          </div>
+
+          <img
+            src="./src/images/contact.png"
+            alt="Bird"
+            class="contact__image"
+          >
         </div>
+      </section>
+    </main>
 
-        <div class="contact-form__fields">
-          <label class="contact-form__label" for="email">E-Mail</label>
-          <input class="contact-form__input" type="email" id="email" name="email" placeholder="example@email.com" required />
-        </div>
-
-        <div class="contact-form__fields">
-          <label class="contact-form__label" for="phone">Phone Number</label>
-          <input class="contact-form__input" type="tel" id="phone" name="phone" placeholder="+31 6 1234 5678" pattern="^[0-9+()\\s-]{7,}$" required />
-        </div>
-
-        <div class="contact-form__fields">
-          <label class="contact-form__label" for="message">Your Message</label>
-          <textarea class="contact-form__textarea" id="message" name="message" placeholder="Write your message" required></textarea>
-        </div>
-
-        <button class="contact-form__submit" type="submit">Send a message</button>
-
-      </form>
-    </div>
-
-    <div class="contact__image-wrapper">
-      <img src="./src/images/contact.png" alt="Contact illustration" class="contact__image" />
-    </div>
-
-  </div>
-</section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer__inner">
-
-      <div class="footer__left">
-        <h3 class="footer__logo">Eco Cosmetics</h3>
-
-        <p class="footer__contact">
-          <a href="tel:+31612345678" class="footer__link">+31 6 1234 5678</a><br />
-          <a href="mailto:hello@eco.com" class="footer__link">hello@eco.com</a>
-        </p>
-      </div>
-
+    <footer class="footer">
+  <div class="footer__container">
+    <div class="footer__left">
       <nav class="footer__nav">
-        <a href="#brand" class="footer__nav-link">Brand</a>
-        <a href="#shop" class="footer__nav-link">Shop</a>
-        <a href="#creators" class="footer__nav-link">Creators</a>
-        <a href="#contact" class="footer__nav-link">Contact</a>
+        <a href="#shop" class="footer__link">Shop</a>
+        <a href="#contact" class="footer__link">Contact</a>
+        <a href="#about" class="footer__link">About</a>
       </nav>
 
-      <div class="footer__social">
-        <a href="https://instagram.com" target="_blank" class="footer__social-link">Instagram</a>
-        <a href="https://facebook.com" target="_blank" class="footer__social-link">Facebook</a>
-        <a href="https://tiktok.com" target="_blank" class="footer__social-link">TikTok</a>
-      </div>
-
+      <p class="footer__copy">
+        Copyright © 2019 Witch Of Mountain Winds
+      </p>
     </div>
-  </footer>
 
-  <script src="src/scripts/main.js"></script>
-</body>
+    <div class="footer__contacts">
+      <p class="footer__text">Ukraine</p>
 
+      <a href="mailto:support.mountain@gmail.com" class="footer__link">
+        support.mountain@gmail.com
+      </a>
+
+      <a href="tel:+380934476839" class="footer__link">
+        +380934476839
+      </a>
+
+      <p class="footer__text">
+        Support is available Monday - Friday 9am–6pm
+      </p>
+
+      <div class="footer__social">
+        <a
+          href="https://www.facebook.com"
+          class="footer__social-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="./src/images/facebook.png"
+            alt="Facebook"
+            class="footer__social-icon"
+          >
+        </a>
+
+        <a
+          href="https://www.instagram.com"
+          class="footer__social-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="./src/images/instagram.png"
+            alt="Instagram"
+            class="footer__social-icon"
+          >
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script type="module" src="/src/scripts/main.js"></script>
+
+  </body>
 </html>
-  
